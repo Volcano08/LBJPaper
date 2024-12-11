@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyndon B. Johnson Tribute</title>
+    <link rel="icon" type="image/x-icon" href="Images/LBJ.ico">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            color: #2c3e50;
+            background-color: #ecf0f1;
+            line-height: 1.8;
+        }
+
+        header {
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            padding: 20px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #16a085;
+        }
+
+        .border-symbolic {
+            height: 8px;
+            background: linear-gradient(to right, #1abc9c, #f1c40f, #e74c3c, #3498db, #1abc9c);
+        }
+
+        .hero {
+            text-align: center;
+            background: url(Images/LBJ\ Portrait.png) no-repeat center/cover;
+            color: white;
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h2 {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 25px;
+            font-size: 2em;
+            border-radius: 5px;
+        }
+
+        .content-section {
+            margin: 30px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h3 {
+            color: #1abc9c;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .quotes {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .quote-box {
+            font-style: italic;
+            margin-bottom: 10px;
+            animation: fadeIn 3s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1abc9c;
+            color: white;
+        }
+
+        footer a {
+            color: #16a085;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Interactive Facts */
+        .fact {
+            cursor: pointer;
+            background: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+
+        .fact:hover {
+            background: #e7e7e7;
+        }
+
+        .fact-detail {
+            display: none;
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="border-symbolic"></div>
+        <h1>Lyndon B. Johnson: Architect of Change</h1>
+        <nav>
+            <a href="#biography">Biography</a>
+            <a href="#foreign-policy">Foreign Policy</a>
+            <a href="#domestic-policy">Domestic Policy</a>
+            <a href="#quotes">Quotes</a>
+            <a href="#facts">Interesting Facts</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>“From Civil Rights to Great Society: A Legacy of Leadership.”</h2>
+    </section>
+
+    <section class="content-section" id="biography">
+        <h3>Biography</h3>
+        <p><strong>LYNDON B. JOHNSON (1908–1973)</strong><br>36th President of the United States (1963–1969)<br>Democratic Party</p>
+        <p>Lyndon B. Johnson, born in a small farmhouse near Stonewall, Texas, rose to become one of the most transformative leaders in American history. He began his career as a teacher in a segregated school for Mexican-American students, an experience that deeply influenced his lifelong dedication to civil rights and education reforms.</p>
+        <p>As a Senator, Johnson’s skill in negotiation and persuasion, famously known as the "Johnson Treatment," helped him achieve legislative success. As president, he championed major initiatives like the Civil Rights Act, Voting Rights Act, and the Great Society programs, which aimed to reduce poverty and eliminate racial injustice. His legacy is complex, with both monumental achievements and controversies, particularly surrounding the Vietnam War.</p>
+    </section>
+
+    <section class="content-section" id="foreign-policy">
+        <h3>Foreign Policy</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="Images/Vietnam War.png" alt="Vietnam War" loading="lazy">
+                <p>Johnson’s foreign policy was dominated by the Vietnam War, which escalated significantly during his presidency as he sought to prevent the spread of communism in Southeast Asia.</p>
+            </div>
+            <div class="card">
+                <img src="Images/Nuc Treaty.png" alt="Nuclear Non-Proliferation Treaty" loading="lazy">
+                <p>He also championed the Nuclear Non-Proliferation Treaty in 1968, aiming to prevent the spread of nuclear weapons and promote peaceful use of nuclear technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="domestic-policy">
+        <h3>Domestic Policy</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="Images/Civil Rights Act.png" alt="Civil Rights Act" loading="lazy">
+                <p>The Civil Rights Act of 1964 ended segregation in public places and banned employment discrimination, a pivotal achievement in American history.</p>
+            </div>
+            <div class="card">
+                <img src="Images/WOP.png" alt="War on Poverty" loading="lazy">
+                <p>The War on Poverty led to the creation of Medicare, Medicaid, and other programs, significantly improving healthcare and education for millions of Americans.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quotes" id="quotes">
+        <h3>Quotes</h3>
+        <div class="quote-box">“We have talked long enough in this country about equal rights. It is time now to write the next chapter—and to write it in the books of law.”</div>
+    </section>
+
+    <section class="content-section" id="facts">
+        <h3>Interesting Facts</h3>
+        <div class="fact" onclick="toggleFact(this)">
+            <strong>Fact 1:</strong> Johnson was sworn in aboard Air Force One.
+            <p class="fact-detail">He was the only president to take the oath of office on a plane, following JFK's assassination.</p>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <strong>Fact 2:</strong> His teaching career influenced his policies.
+            <p class="fact-detail">His time teaching Mexican-American students shaped his passion for education reform.</p>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <strong>Fact 3:</strong> The "Johnson Treatment" was legendary.
+            <p class="fact-detail">His persuasive tactics often involved intense personal interactions to secure support.</p>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <strong>Fact 4:</strong> He signed over 200 landmark laws.
+            <p class="fact-detail">These included the Civil Rights Act and the Voting Rights Act, transforming the nation.</p>
+        </div>
+        <div class="fact" onclick="toggleFact(this)">
+            <strong>Fact 5:</strong> He installed an Oval Office replica at his ranch.
+            <p class="fact-detail">This allowed him to work effectively while away from Washington.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tribute to Lyndon B. Johnson | <a href="#top">Back to Top</a></p>
+    </footer>
+
+    <script>
+        // Dynamic Quotes
+        const quotes = [
+            "“We have talked long enough in this country about equal rights. It is time now to write the next chapter—and to write it in the books of law.”",
+            "“A president’s hardest task is not to do what is right, but to know what is right.”",
+            "“The Great Society is a place where every child can find knowledge to enrich their mind and to enlarge their talents.”"
+        ];
+
+        let currentQuote = 0;
+        const quoteBox = document.querySelector('.quote-box');
+
+        setInterval(() => {
+            currentQuote = (currentQuote + 1) % quotes.length;
+            quoteBox.textContent = quotes[currentQuote];
+        }, 5000);
+
+        // Interactive Facts
+        function toggleFact(element) {
+            const detail = element.querySelector('.fact-detail');
+            detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
